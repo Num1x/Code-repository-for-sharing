@@ -134,37 +134,7 @@ for b in ('repeat this loop for a really long time yeah so um im just gonna use 
 
     if starterLocation == 'the dwarven mines':
         print('You wake up laying down on a cot in a large cave')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                              
+print('e')
 
     break
