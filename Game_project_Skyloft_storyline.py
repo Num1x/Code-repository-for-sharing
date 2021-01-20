@@ -383,8 +383,26 @@ while cont:
         print(inventory)
         uh = input()
         uh = uh.lower()
-        if uh == "dagger" or uh == "Dagger":
-            Cprint("you choose a dagger")
+        if uh == "dagger":
+            Cprint("you choose a dagger!")
+            hand = "Dagger"
+
+        elif uh == "sword 2" or uh == "sword2":
+            Cprint("You choose your level 2 sword!")
+            hand = "Dagger"
+
+        elif uh == "bow":
+            Cprint("You choose your bow and arrows!")
+            hand = "Bow"
+
+        elif "bow" in uh:
+            Cprint("You choose your bow and arrows!")
+            hand = "Bow"
+        elif uh == "wand":
+            Cprint("You choose your wand!")
+            hand = "Wand"
+
+        combat(hand,"Orc")
         
             
 
