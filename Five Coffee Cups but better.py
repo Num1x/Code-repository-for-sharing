@@ -100,17 +100,30 @@ for b in ('repeat this loop for a really long time yeah so um im just gonna use 
     if starterLocation == 'wizard tower':
         print('You wake up laying down in a large circular room')
         print('what do you want to do?')
-        print('you can get up, or look around while laying down')
-        print('type \'get up\' or \'look around\'')
+        print('you can sit up, or look around while laying down')
+        print('type \'sit up\' or \'look around\'')
         choice = input()
         choice.lower
-        if choice == 'get up':
-            print('you get up and look around and see many vials and glasses of random liquids you don\'t recogize')
-            
-        if choice == 'look around':
-            print('you look around but from your limited view from the bed you can\'t really see anything')
-            
-            
+        if choice == 'sit up' or choice == 'look around':
+            if choice == 'sit up':
+                print('you sit up and look around and see many vials and glasses of random liquids you don\'t recogize')
+                print('What do you want to do?')
+                print('You can stand up and walk around, or stay sitting')
+                print('Type \'stand up\' or \'stay sitting\'')
+                choice = input()
+                choice.lower
+                
+                if choice == 'stand up':
+                    print('You stand up and start walking around the room looking at the vials of different colors')
+                    
+                if choice == 'stay sitting':
+                    print('You stay sitting down and look down the rows of multicolored vials.')
+                
+            if choice == 'look around':
+                print('you look around but from your limited view from the bed you can\'t really see anything')
+
+
+
     if starterLocation == 'the town of (to be named)':
         print('You wake up laying down in a small square room')
         
