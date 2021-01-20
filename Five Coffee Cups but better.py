@@ -24,7 +24,6 @@ zombieToHitModifier = 3
 zombieDamageMax = 6
 zombieDamageModifier = 1
 zombieDamageType = 'Bludgeoning'
-    
 
 def textPrint(text,t):
 
@@ -112,21 +111,27 @@ for b in ('repeat this loop for a really long time yeah so um im just gonna use 
                 print('Type \'stand up\' or \'stay sitting\'')
                 choice = input()
                 choice.lower
-                
                 if choice == 'stand up':
                     print('You stand up and start walking around the room looking at the vials of different colors')
+                    print('What do you want to do?')
+                    print('You can walk around, or inspect the vials closer')
+                    print('Type \'walk around\' or \'inspect vials\'')
+                    choice = input()
+                    if choice == 'walk around':
+                        print('You continue to walk around and look at the vials when someone walks into the room from the spiral staircase on the far side of the room)
+                    if choice == 'inspect vials':
+                        print('You are inspecting the vials when a person walks into the room from a spiral staircase situated on the far side of the room')
                     
                 if choice == 'stay sitting':
                     print('You stay sitting down and look down the rows of multicolored vials.')
-                
+                    print('What do you want to do?')
+                    
             if choice == 'look around':
                 print('you look around but from your limited view from the bed you can\'t really see anything')
 
-
-
     if starterLocation == 'the town of (to be named)':
         print('You wake up laying down in a small square room')
-        
+
     if starterLocation == 'the dwarven mines':
         print('You wake up laying down on a cot in a large cave')
 
