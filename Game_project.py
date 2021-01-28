@@ -1,5 +1,6 @@
 import time
 import random
+#i like the name chad
 #Input variables:
 a = None #Used
 b = None #used
